@@ -9,7 +9,7 @@ def clean_data(df : pd.DataFrame) -> pd.DataFrame :
 
     df = df[df['UnitPrice'] > 0]
 
-    df['is_return'] = (df['StockCode'].str.startswith("C", na=False) | df['Quantity'] < 0)
+    df['is_return'] = (df['StockCode'].str.upper().str.startswith("C", na=False) | df['Quantity'] < 0)
 
     df['line_gmv'] = df['UnitPrice'] * df['Quantity']
 
