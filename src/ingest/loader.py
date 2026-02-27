@@ -10,5 +10,4 @@ def load_csv(path : str) -> pd.DataFrame :
             "Country"   : "string"
         }
     )
-
     return df

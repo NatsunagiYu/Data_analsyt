@@ -10,5 +10,6 @@ def customer_feature (df : pd.DataFrame) -> pd.DataFrame :
         total_unit = ('Quantity', 'sum'),
         last_purchase = ('InvoiceDate', 'Max'),
         orders = ('InvoiceNo', 'nunqiue')
-    )
+    ).reset_index()
+    
     return agg
