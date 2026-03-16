@@ -2,7 +2,7 @@
 
 ## What this project does
 
-This project monitors monthly ecommerce performance using transaction-level retail data.
+Python + SQL + Power BI monthly ecommerce monitoring workflow project, which monitors monthly ecommerce performance using transaction-level retail data.
 
 It focuses on three main questions:
 
@@ -11,6 +11,7 @@ It focuses on three main questions:
 3. Is identified-customer health showing potential risk?
 
 Python is used to clean data, classify transactions, calculate metrics, and generate outputs.  
+SQL is used to do early phase exploration
 Power BI is used as the final dashboard layer.
 
 ## Primary analyses
